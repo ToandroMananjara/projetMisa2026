@@ -9,6 +9,28 @@
     font-size: 20px;
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+}
+header{
+    position: relative;
+    height: 60px;
+    background: #011936;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+header a{
+    color: #d9af23;
+    position: absolute;
+    right: 10px;
+}
+.panier{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
 
 .product-container{
     display: flex;
@@ -55,11 +77,80 @@
     text-align: center;
     border: #011936 5px solid;
 }
-.btn-command button{
+.btn-command{
     background: #011936;
     color: #d9af23;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 10px;
+}
+
+
+                        /* Debut Panier */
+/* -------------------------------------------------------------- */
+.panier-title{
+    height: 35px;
+}
+.panier-product{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.panier-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #ddd;
+    padding: 20px;
+}
+.panier-product-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #011936 1px solid;
+    padding: 20px 5px;
+}
+.panier-product-img img{
+    width:110px;
+    
+}
+.panier-product-number {
+    display: flex;
+}
+.panier-product-number span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #011936;
+    width: 30px;
+    height: 40px;
+}
+.panier-product-number .product-number{
+}
+.panier-left, .panier-right{
+    background: #fff;
+    padding: 20px;
+}
+.panier-left{
+    width: 60%;
+}
+.panier-right{
+    width: 35%;
+}
+.cash-in{
+    position: relative;
+    height: 35px;
+}
+.title{
+    position: absolute;
+    left: 10px;
+}
+.cash{
+    position: absolute;
+    right: 10px;
+}
+.valid-command-btn{
+    display: flex;
+    justify-content: center;
 }
