@@ -1,0 +1,65 @@
+@font-face {
+    font-family: astonpoliz;
+    src: url(../fonts/Astonpoliz/Astonpoliz.otf),url(../fonts/Astonpoliz/Astonpoliz.ttf);
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: astonpliz;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.product-item{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #011936 1px solid;
+    padding: 15px;
+}
+.product-image img{
+    width: 240px;
+}
+.product-title{
+    margin-bottom: 0.5rem;
+}
+.product-price{
+    display: flex;
+    justify-content: center;
+    color: #011936;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.product-price span {
+    font-size: xx-large;
+}
+.command-container {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    color: #011936;
+    font-weight: bold;
+    
+}
+.command-container .command-number input{
+    width: 50px;
+    height: 43px;
+    padding: 0 3px ;
+    text-align: center;
+    border: #011936 5px solid;
+}
+.btn-command button{
+    background: #011936;
+    color: #d9af23;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}

@@ -1,0 +1,48 @@
+{
+    "produits": [
+       {
+         "id": "1",
+         "nom": "Lait Entier",
+         "prix": 3.5,
+         "description": "Lait entier de vache, idéal pour la consommation quotidienne.",
+         "photos": [
+           "chemin/vers/photo1.jpg"
+         ],
+         "options": {
+           "quantite": ["1 litre", "2 litres"],
+           "contenance": ["1 litre", "2 litres", "5 litres"]
+         },
+         "stock": {
+           "disponible": 100,
+           "date_mise_en_vente": "2024-03-01"
+         },
+         "meta": {
+           "cree_par": "user123",
+           "date_creation": "2024-01-01",
+           "date_modification": "2024-01-01"
+         }
+       },
+       {
+         "id": "2",
+         "nom": "Yaourt Nature",
+         "prix": 2.2,
+         "description": "Yaourt nature, idéal pour une consommation saine et équilibrée.",
+         "photos": [
+           "chemin/vers/photo2.jpg"
+         ],
+         "options": {
+           "quantite": ["200 g", "400 g"],
+           "contenance": ["200 g", "400 g", "500 g"]
+         },
+         "stock": {
+           "disponible": 200,
+           "date_mise_en_vente": "2024-02-01"
+         },
+         "meta": {
+           "cree_par": "user123",
+           "date_creation": "2024-01-01",
+           "date_modification": "2024-01-01"
+         }
+       }
+    ]
+   }
