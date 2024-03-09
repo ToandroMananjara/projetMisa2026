@@ -75,6 +75,10 @@ form .send{
     cursor: pointer;
     font-size: 1.4rem;
 }
+form .send:hover{
+    color: #fff;   
+    background: #011936!important;
+}
 .send:hover{
     color: #011936;
     background: #F6F4F3;
