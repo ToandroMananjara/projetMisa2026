@@ -12,7 +12,7 @@ const panierRender = `
     </div>
     <div class="panier-right">
         <div class="sum-article cash-in">
-            <span class="title cart-sum-article">Nb article</span>
+            <span class="title cart-sum-article">Nombre d'article</span>
             <span class="cash cart-sum-price"></span>
         </div>
         <hr class="separator">
@@ -31,7 +31,7 @@ const panierRender = `
             </div>
             <div class="total-cash cash-in">
                 <span class="title">Total TTC</span>
-                <span class="cash">0 Ar</span>
+                <span class="cash" id = "sum-cash">0 Ar</span>
             </div>
         </div>
         <hr class="separator">

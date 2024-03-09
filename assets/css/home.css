@@ -1,0 +1,96 @@
+.fixed{
+	font-size: 1.5rem;
+}
+.image-home {
+	padding: 2rem 0;
+	font-size: 3rem;
+	display: flex;
+	justify-content: center;
+}
+
+.s1 {
+	color: #011936;
+}
+
+.s2 {
+	color: #d9af23;
+}
+
+.div2 {
+	background-color: #011936;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+	padding: 2rem;
+	text-align: center;
+}
+
+.block1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.block2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.fiche {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: white;
+	width: 22rem;
+	height: 10rem;
+	border-radius: 0.25rem;
+	align-items: center ;
+	gap: 1rem;
+}
+
+.img2 {
+	border-radius: 50rem;
+	width: 5rem;
+}
+
+
+.div3 {
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.titre {
+	margin-bottom: 2rem;
+    font-size: 48px;
+    color: #d9af23;
+}
+
+.div3 p {
+	margin-bottom: 2rem;	
+}
+.title-home{
+	width: fit-content;
+}
+.title-home h1 {
+    margin-bottom: 0;
+}
+
+.button-home {
+    width: 12rem;
+    height: 3rem;
+    background-color: #d9af23;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 3rem;
+	padding: 0 1rem ;
+}
+.button-home:hover{
+	background-color: #011936;
+	color: #fff;	
+}

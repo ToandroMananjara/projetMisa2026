@@ -1,13 +1,16 @@
+import { panierArray } from "../index.js";
+
 export class PanierList extends HTMLElement{
-    constructor(panier, count){
+    constructor(panier, count, panierObject){
         super()
         // this.root = this.attachShadow({mode : 'open'})
-        // this.data = data
         this.panier = panier
         this.count = count
+        this.panierObject = panierObject
+        
         // this.numberOfArticle = this.articleCount(this.panier)
         this.render()
-
+        this.deletecProduct(this.querySelector('.delete'), this.panier)
         // this.addEventListener('click', ()=>{
         //     this.container = document.querySelector('.container-click')
         //     this.clickItem()
@@ -18,9 +21,7 @@ export class PanierList extends HTMLElement{
     render() {
         this.innerHTML = `
             <style>
-            *{
-                font-size: 20px;
-            }
+            
             .panier-product-img{
                 display: flex;
                 justify-content: center;
@@ -32,8 +33,14 @@ export class PanierList extends HTMLElement{
                 width:110px;
                 
             }
+            .price, .panier-sum-price{
+                display: flex;
+            }
             .panier-product-number {
                 display: flex;
+            }
+            .panier-product-description{
+                
             }
             .panier-product-number span{
                 display: flex;
@@ -45,7 +52,7 @@ export class PanierList extends HTMLElement{
             }
             .panier-product-number .product-number{
                 width: 30px;
-                height: 40px;
+                height: 36px;
                 text-align: center;   
             }
             .panier-left, .panier-right{
@@ -84,32 +91,42 @@ export class PanierList extends HTMLElement{
                     <span>${this.panier.description}</span>
                 </div>
                 <div class="product-price">
-                    <span class="price"> ${this.panier.prix}</span>
+                    <span class="price"> ${this.panier.prix} <span> Ar</span></span>
                 </div>
             </div>
             <div class="panier-product-number">
                 <span class="less-product"><i class="fa-solid fa-chevron-left"></i></span><input class="product-number"  value = ${this.count} ><span class="more-product"><i class="fa-solid fa-chevron-right"></i></span>
             </div>
             <div class="panier-sum-price-item">
-                <span class="panier-sum-price" >${this.count * this.panier.prix}</span>
+                <span class="panier-sum-price" >${(this.count * this.panier.prix)} <span> Ar</span></span>
             </div>
             <div class="panier-delete">
-                <span><i class="fa-solid fa-trash"></i></span>
+                <span class = "delete" ><i class="fa-solid fa-trash"></i></span>
             </div>
             
         `;
     }
-    articleCount(panier){
-        const product = panier.map(arr =>{
-            return arr.productNumber
-        })
-        console.log('product number', product);
-        let sum = product.reduce((acc, valC)=>{
-           return acc + valC
-        },0)
-        return sum
-    }
 
+    deletecProduct(deleteBtn){
+        deleteBtn.addEventListener('click', ()=>{
+            this.remove();
+            console.log(panierArray);
+            this.deleteProductArray(panierArray,this.panierObject)
+
+        })
+    }
+    deleteProductArray(panier , panierObject){
+            let indexRemove = panier.findIndex((arr, index) => {
+                return arr.panierId === panierObject.panierId
+            })
+            panier.splice(indexRemove, 1)
+            console.log(panier);
+    }
+    moreProduct(panierObject,btnMore){
+        btnMore.addEventListener('click', ()=>{
+            panierObject.i
+        })       
+    }
 
 }
 customElements.define('panier-list', PanierList)
