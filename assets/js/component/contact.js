@@ -7,7 +7,6 @@ const contactRender = `
             <select name="" id="">
                 <option value="devis">Devis</option>
                 <option value="serviceClient">Service client</option>
-                <option value="webMaster">Web Master</option>
             </select> 
             <br>
             <input type="email" placeholder="Adress E-mail *" required><br>
@@ -16,8 +15,8 @@ const contactRender = `
                 <input type="file" class="file" accept="jpeg/png"><br>
                 <span class="cache"></span>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message*" required></textarea><br>
-            <button type="submit" class="send">Send</a></button>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Votre message*" required></textarea><br>
+            <button type="submit" class="send">Envoyer</a></button>
         </form>
 </div>
 </div>

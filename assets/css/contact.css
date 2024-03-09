@@ -18,7 +18,8 @@
     height: 1px;
 }
 .contact-container h1{
-    margin-bottom: 5px;
+    font-size: 48px;
+    margin-bottom: 2rem;
 }
 .contact-container{
     width: 80%;
@@ -43,6 +44,7 @@
     padding: 0 10px;
     border: none;
     border-radius: 10px;
+    font-size: 1.3rem;
 }
 select{
     font-size: 1rem;
