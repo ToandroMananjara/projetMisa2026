@@ -40,7 +40,7 @@ export class PanierList extends HTMLElement{
                 display: flex;
             }
             .panier-product-description{
-                
+                width:40%;
             }
             .panier-product-number span{
                 display: flex;
