@@ -21,11 +21,17 @@ header{
     top:0px;
     height: 60px;
     background: #011936;
-    
     color: #fff;
     display: flex;
     align-items: center;
     z-index: 2;
+    padding: 0 1rem ;
+}
+header .logo span{
+    font-size: 2rem;
+}
+header .logo span .E{
+    color: #d9af23  ;
 }
 header .panier{
     color: #d9af23;
